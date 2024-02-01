@@ -1,0 +1,47 @@
+/* Header.css */
+.header {
+  background-color: #6b7280; /* Equivalent to bg-gray-500 */
+  align-items: center;
+}
+
+.container{
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.img {
+  width: 200px;
+  height: 150px;
+}
+
+.logo{
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.nav-items {
+  margin-left: auto; /* Equivalent to ml-auto */
+  display: flex;
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 0.5rem 1.5rem; /* Equivalent to px-6 py-2 */
+  transition-duration: 0.2s; /* Equivalent to duration-200 */
+  background-color: rgb(75, 75, 255); /* Default button background */
+  margin: 10px;
+  border-radius: 9999px; /* Large value to make the button rounded */
+  color: white;
+  font-family:monospace;
+  font-size: 2rem;
+  align-items: center;
+}
+
+.nav-button:hover {
+  background-color: #dbe4ff; /* Equivalent to hover:bg-blue-100 */
+  color: black;
+}
