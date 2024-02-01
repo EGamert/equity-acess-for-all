@@ -1,0 +1,22 @@
+.post-form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 25px;
+    background-color: cadetblue;
+    width: fit-content;
+    border-radius: 3vh;
+}
+
+.textarea{
+    width: 600px;
+    height: 125px;
+    resize: none;
+    font-size: x-large;
+    margin: 25px;
+}
+
+.button{
+    font-size: larger;
+    margin-bottom: 15px;
+}

@@ -1,8 +1,32 @@
 import './Welcome.css'
+import React from 'react'
+
+import { FaEnvelope } from 'react-icons/fa'
 
 import { Link } from 'react-router-dom';
 
 const Welcome = ()=>{
+
+    const PointSection = ({icon, title, description, to})=>{
+        <Link className='options-link' to={`/${to}`}>
+            <div className='links'>
+                <div className='option-icon'>
+                    {icon}
+                </div>
+                <div className='info'>
+                    <b>
+                        <h1>
+                            {title}
+                        </h1>
+                    </b>
+                    <h3>
+                        {description}
+                    </h3>
+                </div>
+            </div>
+        </Link>
+    }
+
     return(
         <>
             <div className="container">
@@ -19,7 +43,12 @@ const Welcome = ()=>{
 
                 <div className="options">
 
-                    
+                    <PointSection 
+                        title='Ask'
+                        description='Ask your own problems or doubts'
+                        icon={<FaEnvelope size={60} color='green' />}
+                        to={'post'}
+                    />
 
                 </div>
             </div>
