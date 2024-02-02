@@ -50,6 +50,8 @@ function Header() {
           )}
         </ul>
       </nav>
+      <div className="image">    
+    </div>
     </header>
     </div>
   )
