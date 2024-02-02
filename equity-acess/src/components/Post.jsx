@@ -24,7 +24,7 @@ const Post = ()=>{
             }
 
         }catch(error){
-
+            console.log(error)
         }
     }
 

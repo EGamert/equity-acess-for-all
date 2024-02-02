@@ -28,10 +28,13 @@ export class Service{
     }
 
     
-    async createRequest({post}){
+    async createRequest({Career, Age,Address,DateOfBirth}){
         try {
             return await this.databases.createDocument(conf.appwriteDatabaseId, conf.appwriteCollectionId,'123456788765432112345678' ,{
-                post:post
+                Career:Career,
+                Age:Age,
+                Address:Address,
+                DateOfBirth:DateOfBirth
             });
         } catch (error) {
             console.log('app write service :: createPost error ', error)
